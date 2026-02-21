@@ -6,7 +6,8 @@ class ContentRequest(models.Model):
         ('social_post','Social Media Post'),
         ("blog_outline",'Blog Outline'),
         ("ad_copy",'Ad Copy'),
-        
+        ("essay", "Essay"),
+        ("product_desc", "Product Description"),
     ]
     topic=models.CharField(max_length=255)
     content_type=models.CharField(max_length=50,choices=CONTENT_TYPES)
